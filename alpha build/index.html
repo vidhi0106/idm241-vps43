@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alpha Build</title>
+</head>
+<body>
+    
+    <div class="heading">
+        <h1>Microinteraction: Reactions on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></h1>
+    </div>
+
+
+<div class="center"> 
+
+
+    <div class="like-container">
+        <button class="like-button" id="likeButton">
+            <img src="pictures/like_icon.png" alt="Like Icon" class="like-icon">
+            Like
+        </button>
+    
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <div class="modal-images">
+                    <img class="move-up-down" src="pictures/like_reaction.png" alt="Like reaction">
+                    <img class="move-up-down2" src="pictures/celebrate_reaction.png" alt="Celebrate reaction">
+                    <img class="move-up-down3" src="pictures/love_reaction.png" alt="Support Reaction">
+                    <img class="move-up-down4" src="pictures/heart_reaction.png" alt="Heart Reaction">
+                    <img class="move-up-down5" src="pictures/insightful_reaction.png" alt="Insightful reaction">
+                    <img class="move-up-down6" src = "pictures/funny_reaction.png" alt="funny reaction">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="grid-container">
+        <div class="grid-item-1"><h3>TRIGGER</h3> <b> Hover on Like Button</b> <br> <br> <b> Hover off Like Button </b> <br> </div>
+        <div class="grid-item"><h3>RULES</h3> <b>Hover on Like Button</b> <br> <p>- The reaction modal pops up <br>
+            - The reactions pop up and then come down in a wave format one time<br>
+            - Grey box appears on the Like button <br>
+        - Cursor changes to pointer <br></p>
+            <b>Hover off Like Button</b>
+            <p>- Pointer changes back to cursor <br>
+                - The reactions disappear <br> 
+                </p> </div>
+        <div class="grid-item"><h3>FEEDBACK</h3>
+        <b>Hover on Like Button</b><br> <p>- The reaction modal pops up <br>
+            - The reactions pop up and then come down in a wave format one time<br>
+            - Grey box appears on the Like button <br>
+            - Cursor changes to pointer <br>
+            </p>
+        <b>Hover off Like Button</b> <p>- Pointer changes back to cursor <br>
+            - The reactions disappear <br>
+            </p></div>
+        <div class="grid-item"><h3>LOOPS AND MODES</h3> <b>Hover on Like Button</b> <p>- The reaction modal pops up with all the different reactions</p> 
+        <b>Hover off Like Button</b><p>- No loops and modes</p></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
