@@ -75,7 +75,7 @@ margin:20px;
 }
 
 ul{
-    display:flex;
+    display:block;
     font-family: var(--Lato-Regular);
     margin:0px;
     font-size:1.2em; 
@@ -86,6 +86,7 @@ ul{
 ::marker {
     margin:0px;
 }
+
 
 p{
     font-family: var(--Lato-Regular);
@@ -109,7 +110,7 @@ b{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: space-evenly;
-    margin:0px 0px 30px 0px;
+    margin:30px 0px 30px 0px;
 }
 .image-column{
 flex:30%;
