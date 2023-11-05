@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alpha Build</title>
+</head>
+<body>
+    
+    <div class="heading">
+        <h1>Microinteraction: Reactions on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></h1>
+    </div>
+
+
+<div class="center"> 
+
+
+    <div class="like-container">
+        <button class="like-button" id="likeButton">
+            <img src="pictures/like_icon.png" alt="Like Icon" class="like-icon">
+            Like
+        </button>
+
+        <div class="text-modal" >
+        
+
+        </div>
+    
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <div class="modal-images">
+                    <img class="move-up-down" src="pictures/like_reaction.png" alt="Like reaction" data-description="Like">
+                    <div class="description">Like</div>
+                    <img class="move-up-down2" src="pictures/celebrate_reaction.png" alt="Celebrate reaction" data-description="Celebrate">
+                    <div class="description2">Celeberate</div>
+                    <img class="move-up-down3" src="pictures/love_reaction.png" alt="Support Reaction" data-description="Support">
+                    <div class="description3">Support</div>
+                    <img class="move-up-down4" src="pictures/heart_reaction.png" alt="Heart Reaction" data-description="Heart">
+                    <div class="description4">Love</div>
+                    <img class="move-up-down5" src="pictures/insightful_reaction.png" alt="Insightful reaction" data-description="Insightful">
+                    <div class="description5">Insightful</div>
+                    <img class="move-up-down6" src="pictures/funny_reaction.png" alt="funny reaction" data-description="Funny">
+                    <div class="description6">Funny</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    
+<div class="grid-container">
+    <div class="grid-item-1"><h3>TRIGGERS</h3> <b> Hover on Like Button</b> <br> <br> <b> Hover off Like Button </b>  <br><br> <b> Hover on Reaction Buttons </b> <br><br> <b> Hover off Reaction Buttons </b> </div>
+
+
+    <div class="grid-item"><h3>RULES</h3> 
+        
+        <b>Hover on Like Button</b> <br> 
+        <ul>
+        <li>The reaction modal pops up. </li>
+        <li>The reaction buttons pop up and then come down in a wave format one time.</li>
+        <li>Grey box appears behind the Like button. </li> 
+        <li>Cursor changes to pointer.</li> <br>
+        </ul>
+
+        <b>Hover off Like Button</b>
+        <ul>
+        <li>Pointer changes back to cursor. </li>
+        <li>There is a small delay and the reaction modal disappears. </li> <br>
+        </ul>
+
+
+        <b>Hover on Reaction Buttons</b>
+        <ul>
+        <li>The reaction button you hover on slides up and expands 1.5 times its original size. </li>
+        <li>A text modal describing the reaction button fades in on top of the reaction button.</li>
+        <li>All other reaction buttons shrink by 0.75 times their original size.</li> <br>
+        </ul>
+
+        <b>Hover off Reaction Buttons</b>
+        <ul>
+        <li>There is a small delay and the reaction modal disappears along with the text modal. </li>
+        <li>Pointer changes back to cursor.</li>
+        </ul>
+
+     </div>
+
+
+    <div class="grid-item"><h3>FEEDBACK</h3>
+
+        <b>Hover on Like Button</b> <br> 
+        <ul>
+        <li>The reaction modal pops up. </li>
+        <li>The reaction buttons pop up and then come down in a wave format one time.</li>
+        <li>Grey box appears behind the Like button. </li> 
+        <li>Cursor changes to pointer.</li> <br>
+        </ul>
+
+        <b>Hover off Like Button</b>
+        <ul>
+        <li>Pointer changes back to cursor. </li>
+        <li>There is a small delay and the reaction modal disappears. </li> <br>
+        </ul>
+
+
+        <b>Hover on Reaction Buttons</b>
+        <ul>
+        <li>The reaction button you hover on slides up and expands 1.5 times its original size. </li>
+        <li>A text modal describing the reaction button fades in on top of the reaction button.</li>
+        <li>All other reaction buttons shrink by 0.75 times their original size.</li> <br>
+        </ul>
+
+        <b>Hover off Reaction Buttons</b>
+        <ul>
+        <li>There is a small delay and the reaction modal disappears along with the text modal. </li>
+        <li>Pointer changes back to cursor.</li>
+        </ul>
+    </div>
+
+
+
+    <div class="grid-item"><h3>LOOPS AND MODES</h3> 
+    <ul>
+    <li>The reaction modal pops up with all the different reaction buttons.</li> <br>
+    <li>A text modal describing the reaction button fades in on top of the reaction button. </li> <br>
+    <li>No loops.</li>
+    </ul>
+</div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
