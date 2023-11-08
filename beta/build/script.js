@@ -33,6 +33,10 @@ document.getElementById('likeButton').addEventListener('mouseenter', function() 
     });
 });
 
+document.getElementById('myModal').addEventListener('mouseenter', function() {
+    clearTimeout(modalTimeout);
+});
+
 document.getElementById('myModal').addEventListener('mouseleave', function() {
     const modal = document.getElementById('myModal');
     modal.style.transition = 'opacity 0.2s ease';
@@ -41,7 +45,7 @@ document.getElementById('myModal').addEventListener('mouseleave', function() {
     modalTimeout = setTimeout(() => {
         modal.style.display = 'none';
         modal.style.opacity = '1'; // Reset opacity for next interaction
-    }, 300); // Adjust the duration of the fade out effect if needed
+    }, 300); 
 });
 
 document.getElementById('likeButton').addEventListener('mouseleave', function() {
@@ -53,7 +57,8 @@ document.getElementById('likeButton').addEventListener('mouseleave', function() 
         images.forEach((image) => {
             image.classList.remove('show');
         });
-    }, 650); // Set to 650ms for the modal to stay after hover off
+    }, 200); 
 });
+
 
 

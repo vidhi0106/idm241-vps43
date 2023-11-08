@@ -371,8 +371,8 @@ margin-bottom:20px;
     font-size: 22px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius:10px;
     align-items:center;
+    border-radius:10px;
 }
 
 .like-button:hover {
@@ -391,7 +391,7 @@ margin-bottom:20px;
     position: absolute;
     z-index: 1;
     left: 0;
-    bottom: 120%;
+    bottom: 100%;
     background-color: #fefefe;
     border: 1px solid #EBEBEB;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
