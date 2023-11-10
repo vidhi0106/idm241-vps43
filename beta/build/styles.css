@@ -395,11 +395,14 @@ margin-bottom:20px;
     background-color: #fefefe;
     border: 1px solid #EBEBEB;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border-radius:10px;
-  width:460px;
-  height:70px;
-  align-items:center;
+    border-radius:10px;
+    width:460px;
+    height:70px;
+    align-items:center;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Add a transition for opacity */
 }
+
 
 .modal-images {
     display: flex;
@@ -410,7 +413,7 @@ margin-bottom:20px;
   border:none;
 }
 
-modal.leave {
+.modal.leave {
     opacity: 0; 
     transition: opacity 0.3s ease;
     transition-delay:1s;

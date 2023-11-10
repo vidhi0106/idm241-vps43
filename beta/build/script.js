@@ -57,7 +57,7 @@ document.getElementById('likeButton').addEventListener('mouseleave', function() 
         images.forEach((image) => {
             image.classList.remove('show');
         });
-    }, 200); 
+    },0); 
 });
 
 
