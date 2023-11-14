@@ -93,6 +93,22 @@ p{
     margin:0px;
     font-size:1.2em;
 }
+
+figure{
+margin:0px;
+}
+
+figcaption{
+    font-family: var(--Lato-Regular);
+    margin:0px;
+    font-size:1.2em;
+    text-align:center;
+    background-color: #0072b1;
+    color:white;
+    padding:15px;
+    border-radius:0px 0px 30px 30px;
+}
+
 b{
     padding:2% 7%;
     font-size:1.2em;
@@ -115,13 +131,17 @@ b{
 .image-column{
 flex:40%;
 padding:20px;
+justify-content: center;
 }
 
 .image{
-    width:100%;
+    width:99%;
 }
 .image-1{
-    width:100%;
+    width:99%;
+    border: 3px solid #0072b1;
+    border-radius: 30px 30px 0px 0px;
+
 }
 
     
@@ -148,6 +168,12 @@ padding:20px;
     }
     }
 
+@media (max-width:800px){
+.image-container{
+flex-direction:column;
+}
+}
+
 @media (max-width:600px){
     .image-column{
         display:flex;
@@ -162,6 +188,7 @@ padding:20px;
     }
     .image-container{
         margin:10px 0px;
+        flex-direction:column;
     }
     h1{
         margin:10px;
