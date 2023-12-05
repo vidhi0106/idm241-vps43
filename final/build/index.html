@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Final Build - vps43</title>
+</head>
+<body>
+    
+    <div class="heading">
+        <h1>Microinteraction: Reactions on LinkedIn</h1>
+    </div>
+
+
+<div class="center"> 
+
+
+    <div class="like-container">
+        <button class="like-button" id="likeButton">
+            <img src="pictures/like_icon.png" alt="Like Icon" class="like-icon">
+            <span id="likeButtonText">Like</span>
+        </button>
+
+        <div class="text-modal" >
+        
+
+        </div>
+    
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <div class="modal-images">
+                    <img class="move-up-down" src="pictures/like_reaction.png" alt="Like reaction" data-description="Like">
+                    <div class="description">Like</div>
+                    <img class="move-up-down2" src="pictures/celebrate_reaction.png" alt="Celebrate reaction" data-description="Celebrate">
+                    <div class="description2">Celeberate</div>
+                    <img class="move-up-down3" src="pictures/support_reaction.png" alt="Support Reaction" data-description="Support">
+                    <div class="description3">Support</div>
+                    <img class="move-up-down4" src="pictures/love_reaction.png" alt="Heart Reaction" data-description="Love">
+                    <div class="description4">Love</div>
+                    <img class="move-up-down5" src="pictures/insightful_reaction.png" alt="Insightful reaction" data-description="Insightful">
+                    <div class="description5">Insightful</div>
+                    <img class="move-up-down6" src="pictures/funny_reaction.png" alt="funny reaction" data-description="Funny">
+                    <div class="description6">Funny</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    
+    <div class="grid-container">
+        <div class="grid-item-1"><h3>TRIGGERS</h3> 
+            <b> Hover on Like Button</b> <br> <br> 
+            <b> Hover off Like Button </b>  <br><br> 
+            <b> Hover on Reaction Buttons </b> <br><br> 
+            <b> Hover off Reaction Buttons </b> <br> <br>
+            <b>Click on Like Button</b> <br> <br>
+            <b>Second Click on Like Button</b> <br> <br>
+            <b>Click on Reaction Buttons</b> <br> <br>
+
+        </div>
+
+
+        <div class="grid-item"><h3>RULES</h3> 
+            
+            <b>Hover on Like Button</b> <br> 
+            <ul>
+            <li>The reaction modal pops up. </li>
+            <li>The reaction buttons pop up and then come down in a wave format one time.</li>
+            <li>Grey box appears behind the Like button. </li> 
+            <li>Cursor changes to pointer.</li> <br>
+            </ul>
+
+            <b>Hover off Like Button</b>
+            <ul>
+            <li>Pointer changes back to cursor. </li>
+            <li>There is a small delay and the reaction modal disappears. </li> <br>
+            </ul>
+
+
+            <b>Hover on Reaction Buttons</b>
+            <ul>
+            <li>The reaction button you hover on slides up and expands 1.5 times its original size. </li>
+            <li>A text modal describing the reaction button fades in on top of the reaction button.</li>
+            <li>All other reaction buttons shrink by 0.75 times their original size.</li> <br>
+            </ul>
+
+            <b>Hover off Reaction Buttons</b>
+            <ul>
+            <li>There is a small delay and the reaction modal disappears along with the text modal. </li>
+            <li>Pointer changes back to cursor.</li><br>
+            </ul>
+
+            <b>Click on Like button</b> <br> 
+            <ul>
+            <li>The Like Icon has a blue fill. </li>
+            <li>The Like Icon has a transition - it moves up by 8px and rotates 10 degress and then comes back to its original position.</li>
+            <li>The number of likes is accounted by logging the name of the user that hit the like button - database is updated.</li><br>
+            </ul>
+
+            <b>Second Click on Like button</b> <br> 
+            <ul>
+            <li>The blue filled Like Reaction image is replaced by the original Like Icon that fades in. </li>
+            <li>The number of likes is accounted by logging the name of the user that hit the like button - database is updated.</li><br>
+            </ul>
+
+            <b>Click on Reaction Buttons</b> <br> 
+            <ul>
+            <li>The Like Icon is replaced by the icon of the reaction button. </li>
+            <li>The Reaction Icon has a transition - it moves up by 8px and rotates 10 degress and then comes back to its original position.</li>
+            <li>The text 'Like' replaced by the text describing the reaction button.</li>
+            <li>The number of reactions is accounted by logging the name of the user that hit the like button - database is updated.</li>
+            <li>The type of reaction is accounted by logging the name of the user that hit the like button - database is updated.</li><br>
+            </ul>
+
+
+
+         </div>
+
+
+        <div class="grid-item"><h3>FEEDBACK</h3>
+
+            <b>Hover on Like Button</b> <br> 
+            <ul>
+            <li>The reaction modal pops up. </li>
+            <li>The reaction buttons pop up and then come down in a wave format one time.</li>
+            <li>Grey box appears behind the Like button. </li> 
+            <li>Cursor changes to pointer.</li> <br>
+            </ul>
+
+            <b>Hover off Like Button</b>
+            <ul>
+            <li>Pointer changes back to cursor. </li>
+            <li>There is a small delay and the reaction modal disappears. </li> <br>
+            </ul>
+
+
+            <b>Hover on Reaction Buttons</b>
+            <ul>
+            <li>The reaction button you hover on slides up and expands 1.5 times its original size. </li>
+            <li>A text modal describing the reaction button fades in on top of the reaction button.</li>
+            <li>All other reaction buttons shrink by 0.75 times their original size.</li> <br>
+            </ul>
+
+            <b>Hover off Reaction Buttons</b>
+            <ul>
+            <li>There is a small delay and the reaction modal disappears along with the text modal. </li>
+            <li>Pointer changes back to cursor.</li><br>
+            </ul>
+
+            <b>Click on Like button</b> <br> 
+            <ul>
+            <li>The Like Icon has a blue fill. </li>
+            <li>The Like Icon has a transition - it moves up by 8px and rotates 10 degress and then comes back to its original position.</li><br>
+            </ul>
+
+            <b>Second Click on Like button</b> <br> 
+            <ul>
+            <li>The blue filled Like Reaction image is replaced by the original Like Icon that fades in. </li>
+            <li>The number of likes is accounted by logging the name of the user that hit the like button - database is updated.</li><br>
+            </ul>
+
+            <b>Click on Reaction Buttons</b> <br> 
+            <ul>
+            <li>The Like Icon is replaced by the icon of the reaction button. </li>
+            <li>The Reaction Icon has a transition - it moves up by 8px and rotates 10 degress and then comes back to its original position.</li>
+            <li>The text 'Like' is replaced by the text describing the reaction button.</li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="grid-item"><h3>LOOPS AND MODES</h3> 
+        <ul>
+        <li>The reaction modal pops up with all the different reaction buttons.</li> <br>
+        <li>A text modal describing the reaction button fades in on top of the reaction button. </li> <br>
+        <li>The Like Icon is replaced by the icon of the reaction button. </li> <br>
+        <li>The text 'Like' is replaced by the text describing the reaction button.</li> <br>
+        <li>No loops.</li>
+        </ul>
+    </div>
+
+    <div class="grid-item"><h3>IMPROVEMENTS</h3> 
+        <ul>
+            <li>Removed the space between the reaction modal and the like button to ensure that the modal does not disappear while trying to navigate to the reaction modal</li>
+            <li>Made the text modal right above the rection modal for easier readability</li>
+            <li>Changed the sizing of the reaction buttons on hover to ensure that all the reaction buttons still fit inside the modal</li>
+            <li>Added a fade out on hover off from reaction button</li>
+            <li>Added a microinteractions to swap the Like icon on click - adding a fade in/out and making the icon move up 8px, rotate 10 degrees and come back to its original position.</li>
+            </ul>
+    </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
