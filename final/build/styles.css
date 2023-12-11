@@ -128,6 +128,7 @@ padding:0px 10px 0px 10px;
     .grid-container {
       width:95%;
       padding:10px;
+      margin:auto;
     }
     
 }
@@ -450,14 +451,13 @@ li{
     padding: 10px;
   border:none;
   opacity:1;
-  transition: opacity 0.3s ease-in-out;
+  
 }
 
 
 
 .modal.leave {
     opacity: 0; 
-    transition: opacity 0.3s ease-in-out;
 }
 
 
